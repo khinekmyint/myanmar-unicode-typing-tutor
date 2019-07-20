@@ -1,0 +1,38 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() 
+{
+
+    char example, input;
+	
+	string output;
+    
+    char chrArray [4] = { 'a','s','d','f' }; 
+    
+    for ( int n=0 ; n<5 ; ++n )
+ 	{
+    	example = chrArray[n];
+    	
+		cout << example <<endl;
+    
+    	cin >> input;
+    
+   		if(example==input)
+			output="right";
+    	else
+			output="wrong";
+    
+    	cout << output << endl;
+ 	}
+    
+    
+    
+    return 0;
+
+}
