@@ -1,0 +1,34 @@
+int main() 
+{
+
+    char example, input;
+	
+	string output;
+    
+    char chrArray [9] = { 'a','s','d','f','g','h','j','k','l' }; 
+    
+    for ( int n=0 ; n<9 ; ++n )
+ 	{
+    	example = chrArray[n];
+    	
+		cout << example <<endl;
+    
+    	cin >> input;
+    
+   		if(example==input)
+			output="right";
+    	else
+    	{
+    		cout <<"wrong. And type again: ";
+    		cin >> input;
+    		if(example==input)
+				output="right";
+			else
+				output="wrong";
+		}
+		   
+    	cout << output << endl;
+    	
+ 	}
+    
+    
