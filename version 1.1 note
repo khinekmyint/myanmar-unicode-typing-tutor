@@ -1,4 +1,6 @@
 # The program goal is to check the input character is the same as the character displayed
+# I give the second chance
 # if the same character I displayed "Right"
-# if different character I displayed "Wrong"
+# if different character I displayed "Wrong" and ask to input again
+    #if the same character displayed "Right" and different displayed "Wrong"
     
