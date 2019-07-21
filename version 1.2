@@ -1,0 +1,61 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+
+int main() 
+{
+
+  char example, input;
+	
+	string output;
+    
+  float score=0, percentage=0;
+    
+  char chrArray [9] = { 'a','s','d','f','g','h','j','k','l' }; 
+    
+  for ( int n=0 ; n<9 ; ++n )
+ 	{
+    example = chrArray[n];
+    	
+		cout << example <<endl;
+    
+    cin >> input;
+    
+   	if(example==input)
+		{
+			output="right";
+			score+=2;
+		}	
+    else
+    	{
+    		cout <<"wrong. And type again: ";
+    		cin >> input;
+    		if(example==input)
+    		{
+    			output="right";
+    			score+=1;
+			}
+				
+			else
+				output="wrong";
+		}
+		
+    	cout << output << endl;
+    	
+ 	}
+ 	
+ 	
+ 	cout<<"total score "<<score<<endl;
+ 	
+ 	percentage=(score/18)*100;
+ 	
+ 	cout<<"total percentage you typing is "<<percentage;
+         
+  return 0;
+
+}
