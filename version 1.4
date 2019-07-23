@@ -1,0 +1,75 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+
+int main() 
+{
+
+    char example, input, c;
+	
+	string output;
+    
+    float score=0, percentage=0;
+    
+    int total=0;
+    
+    char chrArray[4] [10] = {
+    						{ '1','2','3','4','5','6','7','8','9','0' },
+    						{ 'q','w','e','r','t','y','u','i','o','p' },
+							{ 'a','s','d','f','g','h','j','k','l',';' },
+							{ 'z','x','c','v','b','n','m',',','.','/' }
+						   }; 
+    for ( int j=0 ; j<4 ; ++j )
+    {
+	    for ( int n=0 ; n<10 ; ++n )
+	 	{
+	    	example = chrArray[j][n];
+	    	
+			cout << example <<endl;
+	    
+	    	cin >> input;
+	    	
+	    	total+=1;
+	    
+	   		if(example==input)
+			{
+				output="right";
+				score+=2;
+			}	
+	    	else
+	    	{
+	    		cout <<"wrong. And type again: ";
+	    		cin >> input;
+	    		if(example==input)
+	    		{
+	    			output="right";
+	    			score+=1;
+				}
+					
+				else
+					output="wrong";
+			}
+			
+	    	cout << output << endl;
+	    	
+	 	}
+ 	cout <<"If you do not want to continue press (n):";
+ 	cin>>c;
+ 	
+ 	if(c=='n')
+ 		j=4;
+ 	}
+ 	cout<<"total score "<<score<<endl;
+ 	
+ 	percentage=(score/(total*2))*100;
+ 	
+ 	cout<<"total percentage you typing is "<<percentage;
+    
+  return 0;
+
+}
